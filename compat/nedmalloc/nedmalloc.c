@@ -231,7 +231,6 @@ static FORCEINLINE unsigned int size2binidx(size_t _size) THROWSPEC
 		x = x | (x >> 2);
 		x = x | (x >> 4);
 		x = x | (x >> 8);
-		x = x | (x >>16);
 		x = ~x;
 		x = x - ((x >> 1) & 0x55555555);
 		x = (x + (x >> 4)) & 0x0F0F0F0F;
